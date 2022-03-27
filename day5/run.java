@@ -1,24 +1,23 @@
-
-/**
- * @auther kexue
- */
-
-import tools.loader;
-import tools.test.testloader;
+// import scanner.demo01;
 
 public class run {
     public static void main(String[] args) {
-        loader.mainLoader();
-        testloader.mainTest();
+        // demo01.scanKeyBroadNextLine();
+        System.out.println(f(20));
     }
 
-    /**
-     * 
-     * @param name
-     * @return
-     * @throws Exception
-     */
-    public String test(String name) throws Exception {
-        return name;
+    public static void forNumeber() {
+        int[] numbers = { 10, 20, 30, 40, 50 };
+        for (int x : numbers) {
+            System.out.println(x);
+        }
+    }
+
+    public static long f(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return (long) n * f(n - 1);
+        }
     }
 }
